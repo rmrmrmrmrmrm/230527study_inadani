@@ -1,0 +1,27 @@
+@charset 'UTF-8';
+@use "setting" as *;
+@use "sass:map";
+
+//============================================
+//  MIXIN
+//============================================
+
+//  Media Queries
+//--------------------------------------------
+// min-widdthであれば $type: min max-widthであれば$type: max
+// 呼び出し例　@include mq(tab)
+@mixin mq($breakpoint, $type: min) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @if ($type == max) {
+      $width: map.get($breakpoints, $breakpoint);
+      $width: $width - 1;
+      @media screen and (max-width: #{$width}) {
+        @content;
+      }
+    } @else if($type == min) {
+      @media screen and (min-width: #{map.get($breakpoints, $breakpoint)}) {
+        @content;
+      }
+    }
+  }
+}

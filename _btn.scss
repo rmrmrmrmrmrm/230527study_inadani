@@ -1,0 +1,176 @@
+/*
+bg
+-----------------------------------------------------*/
+.c-btn__wrap {
+  max-width: 12em;
+  white-space: nowrap;
+  margin: 0 auto;
+
+  &.-full {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.c-btn__circle {
+  width: 100%;
+  padding-top: 40%;
+  position: relative;
+  display: block;
+
+  &:hover {
+    span {
+      color: #fff;
+    }
+
+    svg {
+      fill: #000;
+    }
+  }
+
+  svg {
+    fill: rgba(255, 255, 255, 1);
+    stroke: #000;
+    stroke-width: 1px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &.-red {
+    svg {
+      stroke: $red;
+      fill: rgba(255, 255, 255, 0);
+    }
+
+    span {
+      color: $red;
+    }
+
+    &:hover {
+      svg {
+        fill: rgb(233, 71, 9);
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.c-btnsns {
+  display: flex;
+  justify-content: center;
+
+  .c-sns {
+    line-height: 3em;
+    display: inline-block;
+    margin: 0 1em;
+  }
+}
+
+.c-btn__arr {
+  display: flex;
+  line-height: 1.3em;
+
+  .-arr {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    margin-right: 0.5em;
+    line-height: 1em;
+  }
+
+  &.-right {
+    justify-content: end;
+
+    .-arr {
+      margin-left: 0.5em;
+      margin-right: 0;
+    }
+  }
+}
+
+.c-btn__anchornav {
+  li {
+    display: block;
+    margin-bottom: 0rem;
+
+    .c-btn__arr {
+      padding: 0.5em 0;
+    }
+  }
+}
+
+.c-pagi-nation {
+  border-bottom: #aaaaaa 0.5px solid;
+  margin: 0 auto;
+
+  .c-pagi-nation__inner {
+    margin: 5vw auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 6rem 0;
+    width: 80%;
+  }
+
+  .c-pagi-nation__num {
+    display: flex;
+    column-gap: 3em;
+    font-size: clamp(1.125rem, 0.977rem + 0.592vw, 1.688rem);
+  }
+
+  .c-pagi-nation__button {
+    width: 34vw;
+    position: absolute;
+    bottom: 0;
+    max-width: 182px;
+  }
+
+  .c-pagi-nation__button.-left {
+    left: 0;
+  }
+
+  .c-pagi-nation__button.-right {
+    right: 0;
+  }
+
+  .page-numbers {
+    margin: 0 1.5em;
+  }
+}
+
+@include mq(tab) {
+  .c-pagi-nation .c-pagi-nation__inner {
+    padding: initial;
+    margin: 4rem auto;
+  }
+
+  .c-pagi-nation .c-pagi-nation__button {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+}
+
+@include mq(lap) {
+  .c-pagi-nation {
+    width: 92%;
+  }
+
+  .c-pagi-nation .c-pagi-nation__inner {
+    max-width: 68vw;
+  }
+}

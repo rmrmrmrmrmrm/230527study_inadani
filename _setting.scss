@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+// -----------------------------------
+//  Layout Settings
+//------------------------------------
+
+// Contentの幅
+$content-width: 1600px !default;
+
+// ブレークポイント
+$breakpoints: (
+  "sp": 375px,
+  "tab": 768px,
+  "lap": 1024px,
+  "desk": 1280px,
+  "vr": 1366px,
+  "wide": 1440px,
+  "full": 1600px,
+) !default;
+
+//====================================
+//  Color Setings
+//====================================
+
+// ベースカラー　背景色
+$base-color: #f0f0f0;
+
+// テキストの色
+$main-text-color: #000;
+$red: #e94709;
+$gray: #aaaaaa;
+
+//====================================
+//  Typeface
+//====================================
+
+$font: "A1 Gothic R", "Noto Sans JP", "游ゴシック体", YuGothic,
+  "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
+  "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica,
+  "sans-serif";
+$font-en: "narkissim", sans-serif;

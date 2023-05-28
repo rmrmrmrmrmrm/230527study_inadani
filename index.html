@@ -5,11 +5,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>テスト</title>
+
+    <link rel='stylesheet' href='./css/style.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='./home.css' type='text/css' media='all' />
 </head>
 
-<body>
-    クローンしてみた
+
+<body class="home p-home">
+    <!-- ①ファーストビューのイラストアニメーションの再現 -->
+    <section class="p_homemain">
+        <div class="p-homemain__imgwrap">
+            <div class="p-homemain__img">
+                <div class="-inner -main_base"><img src="https://inadani-sees.jp/assets/img/main_base.jpg"></div>
+                <div class="-inner -main_color"><img src="https://inadani-sees.jp/assets/img/main_color.png"></div>
+                <div class="-inner -main_kumo"><img src="https://inadani-sees.jp/assets/img/main_kumo.png"></div>
+            </div>
+        </div>
+
+        <div class="p-homemain__txtwrap">
+            <div class="l-section -logowrap">
+                <h1 class="p_homemain__logo">
+                    <div class="-logo"><img src="https://inadani-sees.jp/assets/img/logo_big.svg" alt=""></div>
+                    <div class="-stamp"><img src="https://inadani-sees.jp/assets/img/logo_big_stamp.svg" alt=""></div>
+                </h1>
+            </div>
+
+            <div class="l-section -textwrap p-homemain__txt">
+                <div class="p-homemainlead">
+                    <div class="p-homemainlead__inner">
+                        <h2 class="p_homemain__copy"><img src="https://inadani-sees.jp/assets/img/lead_main.svg"
+                                alt="企てをカタチに。"></h2>
+                        <p class="leadviewFlg">
+                            伊那谷を見つめ、<br>伊那谷から見つめる。<br>そのまなざしは、<br>どちらもあなた自身のもの。<br>企てる場所へ。<br>カタチに変えていく場所へ。</p>
+                        <div class="c-btn__wrap p-homemain__about"><a href="/about/" class="c-btn__circle -btn z"><span
+                                    class="eng">ABOUT</span><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 540 200"
+                                    xml:space="preserve">
+                                    <path class="st0" d="M531.8,56.3C525.1,29.4,494,9,470.2,7.5c-57.8-3.2-116-4.9-200.2-4.9c-84.2,0-142.4,1.6-200.2,4.9
+	C46,9,14.9,29.4,8.2,56.3C4.8,70.7,3,85.4,3,100c0,14.6,1.7,29.3,5.2,43.8c6.7,26.8,37.8,47.2,61.6,48.7c57.8,3.2,116,4.9,200.2,4.9
+	s142.4-1.6,200.2-4.9c23.8-1.5,54.9-21.9,61.6-48.7c3.5-14.5,5.2-29.2,5.2-43.8C537,85.4,535.2,70.7,531.8,56.3z"></path>
+                                </svg>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ②フッターの文字が回るアニメーションの再現 -->
+    <section class="p_homeabout homeFVflg ">
+        <div class="l-section">
+            <div class="l-contents l-flex">
+                <a href="/about/#about_work" class="p_homeabout__bord">
+                    <div class="-card l-contents n1 trunOn"
+                        style="perspective: 2000px; transform: translate(0px, 0px);">
+                        <div class="-ura"></div>
+                        <div class="-inner">
+                            <h2 class="u-title -l "><span>出</span><span>会</span><span>お</span><span>う</span></h2>
+                            <figure class="-img"><img src="https://inadani-sees.jp/assets/img/about/about_cat_1.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+                <a href="/about/#about_study" class="p_homeabout__bord">
+                    <div class="-card l-contents n2 trunOn"
+                        style="perspective: 2000px; transform: translate(0px, 0px);">
+                        <div class="-ura"></div>
+                        <div class="-inner">
+                            <h2 class="u-title -l "><span>働</span><span>こ</span><span>う</span></h2>
+                            <figure class="-img"><img src="https://inadani-sees.jp/assets/img/about/about_cat_2.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+                <a href="/about/#about_meets" class="p_homeabout__bord">
+                    <div class="-card l-contents n3 trunOn"
+                        style="perspective: 2000px; transform: translate(0px, 0px);">
+                        <div class="-ura"></div>
+                        <div class="-inner">
+                            <h2 class="u-title -l "><span>学</span><span>ぼ</span><span>う</span></h2>
+                            <figure class="-img"><img src="https://inadani-sees.jp/assets/img/about/about_cat_3.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="p_homeabout__slide">
+            <div class="-slide -top"><img src="https://inadani-sees.jp/assets/img/slide_logotext.svg"><img
+                    src="https://inadani-sees.jp/assets/img/slide_logotext.svg"></div>
+            <div class="-slide -btm"><img src="https://inadani-sees.jp/assets/img/slide_logotext.svg"><img
+                    src="https://inadani-sees.jp/assets/img/slide_logotext.svg"></div>
+        </div>
+
+    </section>
+
+    <!-- ③カードが裏返るアニメーションの再現 -->
+    <div class="c-pagetop">
+        <div class="l-container">
+            <a href="#top" class="c-pagetopArr"><img src="https://inadani-sees.jp/assets/img/c_arr_top.svg" alt=""></a>
+        </div>
+    </div>
+    <footer class="c-footer">
+        <div class="c-footer__container">
+            <div class="c-footer__logo">
+                <img src="https://inadani-sees.jp/assets/img/logo_big.svg" class="-logo"
+                    alt="inadani sees 伊那谷シーズ 伊那谷のインキュベーション施設">
+                <img src="https://inadani-sees.jp/assets/img/logo_big_stamp.svg" class="-stamp" alt="">
+                <a href="https://inadani-sees.jp/privacy" class="c-footer__ppbtn">
+                    <span class="-inner">
+                        <img src="https://inadani-sees.jp/assets/img/c_policybtn.svg" alt="">
+                        <img src="https://inadani-sees.jp/assets/img/c_policytxt.svg" alt="Privacy policy">
+                    </span>
+                </a>
+            </div>
+            <div class="c-footer__access">
+                <a href="https://inadani-sees.jp/access" class="c-btn__circle -red -btn">
+                    <span class="eng">ACCESS</span>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 540 200" xml:space="preserve">
+                        <path class="st0" d="M531.8,56.3C525.1,29.4,494,9,470.2,7.5c-57.8-3.2-116-4.9-200.2-4.9c-84.2,0-142.4,1.6-200.2,4.9
+	C46,9,14.9,29.4,8.2,56.3C4.8,70.7,3,85.4,3,100c0,14.6,1.7,29.3,5.2,43.8c6.7,26.8,37.8,47.2,61.6,48.7c57.8,3.2,116,4.9,200.2,4.9
+	s142.4-1.6,200.2-4.9c23.8-1.5,54.9-21.9,61.6-48.7c3.5-14.5,5.2-29.2,5.2-43.8C537,85.4,535.2,70.7,531.8,56.3z" />
+                    </svg>
+
+                </a>
+            </div>
+            <div class="c-btnsns eng">
+                <a href="https://www.facebook.com/inadanisees/" target="_blank" class="c-sns"><span>Facebook</use>
+                        </svg></span></a>
+                <a href="https://www.instagram.com/inadanisees/" target="_blank" class="c-sns"><span>Instagram</use>
+                        </svg></span></a>
+            </div>
+        </div>
+        <div class="c-terms__list">
+            <a href="https://inadani-sees.jp/assets/documents/terms.pdf" class="-link" target="_blank">利用規約</a>
+            <a href="https://inadani-sees.jp/terms" class="-link">特定商取引法に基づく表記</a>
+        </div>
+    </footer>
+    <!--/footer-->
+
 </body>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script>
+<script type="text/javascript" src="./script.js"></script>
 
 </html>
